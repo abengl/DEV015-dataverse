@@ -1,3 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+header {
+    background-color: antiquewhite;
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+} 
+
+main {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    list-style: none;
+}
+
+.card {
+    padding: 0;
+    border: 1px solid #eee;
+    flex: 1 1 300px;
+    background-color: white;
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
 dt {
     display: none;
 }
+
+.card-label {
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.824);
+    position: absolute;
+    margin: 10px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid #758ea3;
+}
+
+.card-label.type {
+    top: 0;
+    left: 0;
+}
+
+.card-label.difficultyLevel {
+    top: 0;
+    right: 0;
+}
+
+.card-label.field {
+    top: 7%;
+    left: 0;
+}
+
+.card-text {
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.card-text.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-text.description {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; /* Número de líneas a mostrar */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.card-text.users {
+    display: none;
+}
+
