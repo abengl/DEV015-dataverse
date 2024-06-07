@@ -5,18 +5,18 @@ export const renderItems = (data) => {
   data.forEach((objeto) => {
     //Creamos cada li
     const liElement = document.createElement('li');
-    liElement.classList.add('card-container');
+    liElement.classList.add('card');
     liElement.innerHTML = `
       <dl itemscope itemtype="TecnologiasDeProgramacion">
         <img src="${objeto.imageUrl}" alt="${objeto.name}" />
         <dt>Tipo:</dt><dd class="card-label type" itemprop="type">${objeto.facts.type}</dd>
         <dt>Dificultad:</dt><dd class="card-label difficultyLevel" itemprop="difficultyLevel">${objeto.facts.difficultyLevel}</dd>
-        <dt>Nombre:</dt><dd class="card-name" itemprop="name">${objeto.name}</dd>
-        <dt>Descripción:</dt><dd class="card-description" itemprop="description">${objeto.description}</dd>
-        <dt>Año:</dt><dd class="card-year" itemprop="yearOfCreation">${objeto.facts.yearOfCreation}</dd>
-        <dt>Creador:</dt><dd class="card-creator" itemprop="creator">${objeto.facts.creator}</dd>
-        <dt>Usuarios:</dt><dd class="card-users" itemprop="percentageOfUsers">${objeto.facts.percentageOfUsers}</dd>
-        <dt>Campo:</dt><dd class="card-field" itemprop="aplicationField">${objeto.facts.aplicationField}</dd>
+        <dt>Nombre:</dt><dd class="card-text name" itemprop="name">${objeto.name}</dd>
+        <dt>Descripción:</dt><dd class="card-text description" itemprop="description">${objeto.description}</dd>
+        <dt>Año:</dt><dd class="card-text year" itemprop="yearOfCreation">Creado en: ${objeto.facts.yearOfCreation}</dd>
+        <dt>Creador:</dt><dd class="card-text creator" itemprop="creator">Autor: ${objeto.facts.creator}</dd>
+        <dt>Usuarios:</dt><dd class="card-text users" itemprop="percentageOfUsers">${objeto.facts.percentageOfUsers}</dd>
+        <dt>Campo:</dt><dd class="card-label field" itemprop="aplicationField">${objeto.facts.aplicationField}</dd>
       </dl>
       `;
 

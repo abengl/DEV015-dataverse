@@ -1,3 +1,119 @@
+/* Reset styles, width and height properties of elements include padding and border by default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header{
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+main {
+    margin: 0;
+}
+
+/* General card container*/
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    list-style: none;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    min-height: 400px;
+    background-color: white;
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 100%; 
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+}
+
 dt {
+    display: none;
+}
+
+.card-label {
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    margin: 10px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    line-height: 1.4;
+}
+
+.card-label.type {
+    top: 0;
+    left: 0;
+}
+
+.card-label.difficultyLevel {
+    top: 0;
+    right: 0;
+}
+
+.card-text {
+    padding: 0px 15px;
+    margin-bottom: 10px;
+}
+
+.card-text.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-label.field {
+    top: 7%;
+    left: 0;
+}
+
+.card-text.description {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.card-text.year {
+}
+
+.card-text.creator {
+}
+
+.card-text.users {
     display: none;
 }
