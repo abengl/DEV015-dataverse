@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
   <body>
@@ -13,11 +13,50 @@
       <h1>Tecnologías de Programación</h1>
     </header>
     <main id="root">
+      <div class="select-container">
+        <!--Select 1: Tipo-->
+        <label for="type-select">Tipo</label>
+        <select name="type" id="type-select" data-testid="select-filter">
+          <option value="programming-language">Programming Language</option>
+          <option value="framework">Framework</option>
+          <option value="scripting-language">Scripting Language</option>
+          <option value="markup-language">Markup Language</option>
+          <option value="database-language">Database Language</option>
+        </select>
+
+        <!--Select 2: Campo de aplicación-->
+        <label for="applicationField-select">Campo de aplicación</label>
+        <select
+          name="applicationField"
+          id="applicationField-select"
+          data-testid="select-filter"
+        >
+          <option value="frontend-development">Frontend Development</option>
+          <option value="backend-development">Backend Development</option>
+          <option value="data-science">Data Science</option>
+        </select>
+
+        <!--Select 3: Ordenar-->
+        <label for="order-sort">Ordenar</label>
+        <select name="order" id="order-sort" data-testid="select-sort">
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+
+        <!--Botón 1: Métricas Ranking-->
+        <button class="metrics">Métricas</button>
+
+        <!--Botón 2: Limpiar-->
+        <button data-testid="button-clear">Limpiar</button>
+      </div>
+      <!--Cards (el test oas:html lo requiere)*-->
       <ul>
         <li itemscope itemtype="TecnologiasDeProgramacion"></li>
       </ul>
     </main>
     <script src="main.js" type="module"></script>
-    <footer></footer>
+    <footer>
+      <h2>Dataverse 2024</h2>
+    </footer>
   </body>
 </html>
