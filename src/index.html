@@ -10,9 +10,12 @@
   </head>
   <body>
     <header>
+      <img class="logo" src="assets/difficulty-svgrepo-com.svg" alt="Dataverse" />
       <h1>Tecnologías de Programación</h1>
     </header>
     <main id="root">
+      <h2>Conoce las tecnologías de programación vigentes</h2>
+      <p class="subtitle">Selecciona las tecnología por tipo de lenguage de programación o campo de aplicación y ordenar los resultados de forma ascendente o descendente. Haz click en métrica y conoce el ranking de los lenguages más usado actualmente. Haz click en limpiar para borrar el filtro seleccionado.</p>
       <div class="select-container">
         <!--Select 1: Tipo-->
         <label for="type-select">Tipo</label>
@@ -51,12 +54,12 @@
       </div>
       <!--Cards (el test oas:html lo requiere)*-->
       <ul>
-        <li itemscope itemtype="TecnologiasDeProgramacion"></li>
+        <li class="card" itemscope itemtype="TecnologiasDeProgramacion"></li>
       </ul>
     </main>
     <script src="main.js" type="module"></script>
     <footer>
-      <h2>Dataverse 2024</h2>
+      <span>Dataverse 2024</span>
     </footer>
   </body>
 </html>

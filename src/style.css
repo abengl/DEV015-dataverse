@@ -1,3 +1,28 @@
+:root {
+  --ff-sans: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --fs-small: 0.875rem; /* 14px */
+  --fs-normal: 1rem; /* 16px */
+  --fs-large: 1.25rem; /* 20px */
+  --fs-extra-large: 1.875rem; /* 30px */
+
+  --lh-small: 1.3;
+  --lh-normal: 1.5;
+
+  --clr-neutral-50: #fafafa;
+  --clr-neutral-200: #e5e5e5;
+  --clr-neutral-600: #525252;
+  --clr-neutral-800: #262626;
+
+  --clr-primary-red: hsl(0, 78%, 62%);
+  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-orange: hsl(34, 97%, 64%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,21 +30,49 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
 }
 
+/*Logo*/
 header {
-  padding: 20px;
-  background-color: antiquewhite;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: var(--clr-neutral-200);
+  display: flex;
   text-align: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-800);
+}
+
+h2 {
+  font-size: var(--fs-extra-large);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-800);
+  text-align: center;
+}
+
+.subtitle {
+  padding: 20px;
+  margin-bottom: 50px;
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  color: var(--clr-neutral-600);
+  text-align: center;
 }
 
 main {
@@ -28,9 +81,11 @@ main {
 
 /*Propiedades de prueba*/
 .select-container {
-  margin: 20px;
+  margin: 0 20px 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /*Propiedades de prueba*/
@@ -39,8 +94,13 @@ select {
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  margin-right: 10px;
 }
+
+/*Select 1 : Tipo*/
+
+/*Select 2: Aplicación*/
+
+/*Select 3: Orden*/
 
 /*Propiedades de prueba*/
 button {
@@ -51,6 +111,10 @@ button {
   background-color: #f0f0f0;
   cursor: pointer;
 }
+
+/*Boton 1: Ranking*/
+
+/*Boton 2: Limpiar*/
 
 /*Container de todas las cards*/
 ul {
@@ -95,6 +159,8 @@ img {
 /*Container de todo el texto*/
 .card-content {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-label {
@@ -148,6 +214,6 @@ img {
 /*Propiedades de Prueba*/
 footer {
   padding: 20px;
-  background-color: antiquewhite;
+  background-color: var(--clr-neutral-200);
   text-align: center;
 }
