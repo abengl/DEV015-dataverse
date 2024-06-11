@@ -1,3 +1,12 @@
+/*Recomendaciones OH: 
+-elegir un fondo que contraste con el color de las tarjetas
+-usar rem o em para el tamaño de las fuentes
+-resaltar creador y año con bold u otro efecto
+-Mejorar las etiquetas cuando haya cambio a mobile
+-mejorar el tamaño de las fuentes cuando haya cambio a mobile
+-Usar iconos para explicar el nivel de dificultad (beginner o advance)
+-Poner el botón de métricas en la parte derecha separado de los filtros
+*/
 :root {
   --ff-sans: "Poppins", sans-serif;
 
@@ -14,12 +23,12 @@
   --lh-normal: 1.5;
 
   --clr-neutral-50: #fafafa;
-  --clr-neutral-200: #e5e5e5;
-  --clr-neutral-600: #525252;
+  --clr-neutral-200: #e5e5e5; /* header y footer background*/
+  --clr-neutral-600: #525252; /* label border */
   --clr-neutral-800: #262626;
 
-  --clr-primary-red: hsl(0, 78%, 62%);
-  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-red: hsl(0, 78%, 62%); /* icono alto */
+  --clr-primary-green: hsl(180, 62%, 55%); /* icono bajo */
   --clr-primary-orange: hsl(34, 97%, 64%);
 }
 
@@ -32,7 +41,7 @@
 body {
   font-family: var(--ff-sans);
   font-size: var(--fs-normal);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-normal);
   line-height: var(--lh-normal);
 }
 
@@ -50,27 +59,23 @@ header {
 
 .logo {
   height: 4rem;
-  width: auto;
 }
 
 h1 {
   font-size: var(--fs-large);
-  font-weight: var(--fw-bold);
   color: var(--clr-neutral-800);
 }
 
 h2 {
-  font-size: var(--fs-extra-large);
+  font-size: var(--fs-large);
   font-weight: var(--fw-bold);
   color: var(--clr-neutral-800);
   text-align: center;
 }
 
-.subtitle {
+.introduction {
   padding: 20px;
   margin-bottom: 50px;
-  font-size: var(--fs-normal);
-  font-weight: var(--fw-normal);
   color: var(--clr-neutral-600);
   text-align: center;
 }
@@ -80,12 +85,20 @@ main {
 }
 
 /*Propiedades de prueba*/
-.select-container {
+nav {
   margin: 0 20px 50px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: right;
   align-items: center;
   gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /*Propiedades de prueba*/
@@ -93,7 +106,6 @@ select {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
 /*Select 1 : Tipo*/
@@ -112,9 +124,9 @@ button {
   cursor: pointer;
 }
 
-/*Boton 1: Ranking*/
+/*Boton 1: Limpiar*/
 
-/*Boton 2: Limpiar*/
+/*Boton 2: Top 3*/
 
 /*Container de todas las cards*/
 ul {
@@ -128,13 +140,11 @@ ul {
 
 /*Container de una sola card*/
 .card {
-  padding: 0; /*value to pass the test, can be deleted*/
   border: 1px solid #eee;
   flex: 1 1 300px;
   background-color: white;
   box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  position: relative;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -145,22 +155,16 @@ ul {
 /*Container de la imagen*/
 .card-image {
   margin: 0;
+  position: relative;
 }
 
-img {
+.image {
   width: 100%;
   max-width: 100%;
   max-height: 200px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   margin-bottom: 10px;
-}
-
-/*Container de todo el texto*/
-.card-content {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .card-label {
@@ -170,7 +174,7 @@ img {
   margin: 10px;
   padding: 3px 5px;
   border-radius: 5px;
-  border: 1px solid #758ea3;
+  border: 1px solid var(--clr-neutral-600);
 }
 
 .card-label.type {
@@ -178,14 +182,33 @@ img {
   left: 0;
 }
 
-.card-label.difficultyLevel {
+.card-label.field {
+  top: 12%;
+  left: 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 10px;
   top: 0;
   right: 0;
 }
 
-.card-label.field {
-  top: 7%;
-  left: 0;
+.icon.Bajo {
+  background-color: var(--clr-primary-green);
+}
+
+.icon.Alto {
+  background-color: var(--clr-primary-red);
+}
+
+
+/*Container de todo el texto*/
+.card-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-text {
