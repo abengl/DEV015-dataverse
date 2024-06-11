@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
   <body>
     <header>
-      <h1>Tecnologías de Programación</h1>
+      <img
+        class="logo"
+        src="assets/difficulty-svgrepo-com.svg"
+        alt="Dataverse"
+      />
+      <h1>TechGenius</h1>
     </header>
     <main id="root">
-      <ul>
-        <li itemscope itemtype="TecnologiasDeProgramacion"></li>
-      </ul>
+      <h2>Explora y Conquista las Tendencias Tecnológicas</h2>
+      <p class="introduction">
+        Descubre y domina las últimas tendencias tecnológicas. Explora tecnologías por tipo de lenguaje o campo de aplicación, ordena resultados y accede al ranking de lenguajes más populares. Limpia filtros con un clic. TechGenius, tu puerta al futuro tecnológico.
+      </p>
+      <!--Nav-->
+      <nav class="select-container">
+        <!--Select 1: Tipo-->
+        <label for="type-select"></label>
+        <select name="type-filter" id="type-select" data-testid="select-filter">
+          <option value="" disabled selected>Filtrar por tipo</option>
+          <option value="programming">Programming Language</option>
+          <option value="framework">Framework</option>
+          <option value="scripting">Scripting Language</option>
+          <option value="markup">Markup Language</option>
+          <option value="database">Database Language</option>
+        </select>
+
+        <!--Select 2: Campo de aplicación-->
+        <label for="applicationField-select"></label>
+        <select
+          name="applicationField-filter"
+          id="applicationField-select"
+          data-testid="select-filter"
+        >
+          <option value="" disabled selected>Filtrar por aplicación</option>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="datascience">Data Science</option>
+        </select>
+
+        <!--Select 3: Ordenar-->
+        <label for="order-select"></label>
+        <select name="order" id="order-select" data-testid="select-sort">
+          <option value="" disabled selected>Ordenar</option>
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+
+        <!--Botón 1: Limpiar-->
+        <button data-testid="button-clear">Limpiar</button>
+
+        <!--Botón 2: Métricas Ranking-->
+        <button class="metrics">Top 3</button>
+
+      </nav>
     </main>
     <script src="main.js" type="module"></script>
-    <footer></footer>
+    <footer>
+      <span>Desarrollado por Licet Lemus y Alessandra Godoy</span><br>
+      <span>Proyecto Dataverse 2024 - Laboratoria</span>
+    </footer>
   </body>
 </html>

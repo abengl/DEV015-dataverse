@@ -1,23 +1,26 @@
 export const renderItems = (data) => {
-  // Creamos el elemento ul
   const ulElement = document.createElement("ul");
-  //Iteramos la data
+
   data.forEach((objeto) => {
-    //Creamos cada li
-    const liElement = document.createElement('li');
-    liElement.classList.add('card');
+    const liElement = document.createElement("li");
+    liElement.classList.add("card");
+    liElement.setAttribute("itemscope", "");
+    liElement.setAttribute("itemtype", "TecnologiasDeProgramacion");
+
     liElement.innerHTML = `
-      <dl itemscope itemtype="TecnologiasDeProgramacion">
-        <img src="${objeto.imageUrl}" alt="${objeto.name}" />
-        <dt>Tipo:</dt><dd class="card-label type" itemprop="type">${objeto.facts.type}</dd>
-        <dt>Dificultad:</dt><dd class="card-label difficultyLevel" itemprop="difficultyLevel">${objeto.facts.difficultyLevel}</dd>
-        <dt>Nombre:</dt><dd class="card-text name" itemprop="name">${objeto.name}</dd>
-        <dt>Descripción:</dt><dd class="card-text description" itemprop="description">${objeto.description}</dd>
-        <dt>Año:</dt><dd class="card-text year" itemprop="yearOfCreation">Creado en: ${objeto.facts.yearOfCreation}</dd>
-        <dt>Creador:</dt><dd class="card-text creator" itemprop="creator">Autor: ${objeto.facts.creator}</dd>
-        <dt>Usuarios:</dt><dd class="card-text users" itemprop="percentageOfUsers">${objeto.facts.percentageOfUsers}</dd>
-        <dt>Campo:</dt><dd class="card-label field" itemprop="aplicationField">${objeto.facts.aplicationField}</dd>
-      </dl>
+        <div class="card-image">
+          <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" />
+          <span class="card-label type" itemprop="type">${objeto.facts.type}</span>
+          <img src="assets/power.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="difficultyLevel" />
+          <span class="card-label field" itemprop="aplicationField">${objeto.facts.aplicationField}</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-text name" itemprop="name">${objeto.name}</h3>
+          <p class="card-text description" itemprop="description">${objeto.description}</p>
+          <span class="card-text year" itemprop="yearOfCreation">Creado en: ${objeto.facts.yearOfCreation}</span>
+          <span class="card-text creator" itemprop="creator">Autor: ${objeto.facts.creator}</span>
+          <span class="card-text users" itemprop="percentageOfUsers">${objeto.facts.percentageOfUsers}</span>
+        </div>
       `;
 
     //Añadimos los li al elemento ul
