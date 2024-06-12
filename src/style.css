@@ -88,17 +88,10 @@ main {
 nav {
   margin: 0 20px 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
+  flex-direction: column; 
+  justify-content:center;
+  align-items: end;
   gap: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  nav {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
 /*Propiedades de prueba*/
@@ -194,6 +187,7 @@ ul {
   margin: 10px;
   top: 0;
   right: 0;
+  border-radius: 1.25rem;
 }
 
 .icon.Bajo {
@@ -239,4 +233,11 @@ footer {
   padding: 20px;
   background-color: var(--clr-neutral-200);
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row; /* Cambiar a dirección de fila en pantallas grandes */
+    justify-content: center;
+  }
 }
