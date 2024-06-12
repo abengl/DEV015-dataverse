@@ -1,12 +1,4 @@
-/*Recomendaciones OH: 
--elegir un fondo que contraste con el color de las tarjetas
--usar rem o em para el tamaño de las fuentes
--resaltar creador y año con bold u otro efecto
--Mejorar las etiquetas cuando haya cambio a mobile
--mejorar el tamaño de las fuentes cuando haya cambio a mobile
--Usar iconos para explicar el nivel de dificultad (beginner o advance)
--Poner el botón de métricas en la parte derecha separado de los filtros
-*/
+
 :root {
   --ff-sans: "Poppins", sans-serif;
 
