@@ -89,8 +89,8 @@ nav {
   margin: 0 20px 50px;
   display: flex;
   flex-direction: column; 
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items: end;
   gap: 10px;
 }
 
@@ -238,6 +238,6 @@ footer {
 @media only screen and (min-width: 768px) {
   nav {
     flex-direction: row; /* Cambiar a dirección de fila en pantallas grandes */
-    border: 2px solid red;
+    justify-content: center;
   }
 }
