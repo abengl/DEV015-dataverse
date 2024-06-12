@@ -11,7 +11,7 @@ export const renderItems = (data) => {
         <div class="card-image">
           <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" />
           <span class="card-label type" itemprop="type">${objeto.facts.type}</span>
-          <img src="assets/power.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="difficultyLevel" />
+          <img src="assets/fire.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="difficultyLevel" />
           <span class="card-label field" itemprop="aplicationField">${objeto.facts.aplicationField}</span>
         </div>
         <div class="card-content">
