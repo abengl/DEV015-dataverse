@@ -1,18 +1,29 @@
-import { example, anotherExample } from '../src/dataFunctions.js';
-//import { data as fakeData } from './data.js';
+import { filterData } from "../src/dataFunctions.js";
+import { data } from "./data.js";
 
-//console.log(fakeData);
+// console.log(data);
 
-describe('example', () => {
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+describe("filterData", () => {
+  it('return filters data by applicationField "Data Science"', () => {
+    const filteredData = filterData(data, 'applicationField', 'Data Science');
+    // console.log(filteredData)
+    expect(filteredData.some(obj => obj.id === "python")).toBe(true);
   });
 });
 
+describe('filterdata', () => {
+  it('return filters data by applicationField 0', () => {
+    const filteredData = filterData(data, 'applicationField', '');
+    expect(filteredData.length).toBe(0);
+  });
+});
+
+
+/*
 describe('anotherExample', () => {
 
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+*/

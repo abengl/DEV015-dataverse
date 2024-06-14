@@ -12,7 +12,7 @@ export const renderItems = (data) => {
           <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" />
           <span class="card-label type" itemprop="type">${objeto.facts.type}</span>
           <img src="assets/fire.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="difficultyLevel" />
-          <span class="card-label field" itemprop="aplicationField">${objeto.facts.aplicationField}</span>
+          <span class="card-label field" itemprop="applicationField">${objeto.facts.applicationField}</span>
         </div>
         <div class="card-content">
           <h3 class="card-text name" itemprop="name">${objeto.name}</h3>
