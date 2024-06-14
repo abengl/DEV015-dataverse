@@ -11,7 +11,7 @@ export const data = [
     imageUrl: "/assets/image_1.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 1995,
       creator: "Brendan Eich",
       percentageOfUsers: "63.61%",
@@ -27,7 +27,7 @@ export const data = [
     imageUrl: "/assets/image_2.jpeg",
     facts: {
       type: "Markup Language",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 1991,
       creator: "Tim Berners-Lee y Hakon Wium Lie",
       percentageOfUsers: "52.97%",
@@ -44,7 +44,7 @@ export const data = [
     imageUrl: "/assets/image_3.jpeg",
     facts: {
       type: "Database Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 1974,
       creator: "Donald D. Chamberlin y Raymond F. Boyce",
       percentageOfUsers: "48.66%",
@@ -61,7 +61,7 @@ export const data = [
     imageUrl: "/assets/image_4.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Data Science",
+      applicationField: "Data Science",
       yearOfCreation: 1991,
       creator: "Guido van Rossum",
       percentageOfUsers: "48.07%",
@@ -78,7 +78,7 @@ export const data = [
     imageUrl: "/assets/image_5.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 1995,
       creator: "James Gosling",
       percentageOfUsers: "34.31%",
@@ -95,7 +95,7 @@ export const data = [
     imageUrl: "/assets/image_6.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 2012,
       creator: "Microsoft",
       percentageOfUsers: "27.58%",
@@ -112,7 +112,7 @@ export const data = [
     imageUrl: "/assets/image_7.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2000,
       creator: "Microsoft",
       percentageOfUsers: "26.7%",
@@ -129,7 +129,7 @@ export const data = [
     imageUrl: "/assets/image_8.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 1994,
       creator: "Rasmus Lerdorf",
       percentageOfUsers: "21.26%",
@@ -146,7 +146,7 @@ export const data = [
     imageUrl: "/assets/image_9.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 1983,
       creator: "Bjarne Stroustrup",
       percentageOfUsers: "20.41%",
@@ -163,7 +163,7 @@ export const data = [
     imageUrl: "/assets/image_10.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2009,
       creator: "Robert Griesemer, Rob Pike, y Ken Thompson",
       percentageOfUsers: "18.21%",
@@ -180,7 +180,7 @@ export const data = [
     imageUrl: "/assets/image_11.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2010,
       creator: "Graydon Hoare",
       percentageOfUsers: "15.11%",
@@ -197,7 +197,7 @@ export const data = [
     imageUrl: "/assets/image_12.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2011,
       creator: "JetBrains",
       percentageOfUsers: "12.97%",
@@ -214,7 +214,7 @@ export const data = [
     imageUrl: "/assets/image_13.jpeg",
     facts: {
       type: "Programming Language",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 1995,
       creator: "Yukihiro Matsumoto",
       percentageOfUsers: "11.39%",
@@ -231,7 +231,7 @@ export const data = [
     imageUrl: "/assets/image_14.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 2013,
       creator: "Jordan Walke",
       percentageOfUsers: "40.58%",
@@ -248,7 +248,7 @@ export const data = [
     imageUrl: "/assets/image_15.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2009,
       creator: "Ryan Dahl",
       percentageOfUsers: "33.91%",
@@ -265,7 +265,7 @@ export const data = [
     imageUrl: "/assets/image_16.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2005,
       creator: "Adrian Holovaty y Simon Willison",
       percentageOfUsers: "15.9%",
@@ -282,7 +282,7 @@ export const data = [
     imageUrl: "/assets/image_17.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 2010,
       creator: "Google",
       percentageOfUsers: "22.96%",
@@ -299,7 +299,7 @@ export const data = [
     imageUrl: "/assets/image_18.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 2014,
       creator: "Evan You",
       percentageOfUsers: "18.82%",
@@ -316,7 +316,7 @@ export const data = [
     imageUrl: "/assets/image_19.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2002,
       creator: "Rod Johnson",
       percentageOfUsers: "13.35%",
@@ -332,7 +332,7 @@ export const data = [
     imageUrl: "/assets/image_20.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2011,
       creator: "Taylor Otwell",
       percentageOfUsers: "10.57%",
@@ -348,7 +348,7 @@ export const data = [
     imageUrl: "/assets/image_21.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2010,
       creator: "Armin Ronacher",
       percentageOfUsers: "10.24%",
@@ -365,7 +365,7 @@ export const data = [
     imageUrl: "/assets/image_22.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Backend Development",
+      applicationField: "Backend Development",
       yearOfCreation: 2010,
       creator: "TJ Holowaychuk",
       percentageOfUsers: "20.37%",
@@ -382,7 +382,7 @@ export const data = [
     imageUrl: "/assets/image_25.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Front-End Development",
+      applicationField: "Front-End Development",
       yearOfCreation: 2006,
       creator: "John Resig",
       percentageOfUsers: "18.64%",
@@ -399,7 +399,7 @@ export const data = [
     imageUrl: "/assets/image_24.jpeg",
     facts: {
       type: "Framework",
-      aplicationField: "Data Science",
+      applicationField: "Data Science",
       yearOfCreation: 2015,
       creator: "Google Brain Team",
       percentageOfUsers: "10.23%",
