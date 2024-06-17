@@ -6,11 +6,10 @@ const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
 
-/*
+
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
-  */
 
 function displayCards(data) {
   mainElement.removeChild(ulElement);
@@ -27,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
   filterSelectType.addEventListener("change", (event) => {
     const selectedValueType = event.target.value;
     const filterItemsType = filterData(data, "type", selectedValueType);
-    // resetSelectIndex(filterSelectApplication);
+    resetSelectIndex(filterSelectApplication);
     displayCards(filterItemsType);
   });
 
   filterSelectApplication.addEventListener("change", (event) => {
     const selectedValue = event.target.value;
     const filterItemsApplication = filterData(data, "applicationField", selectedValue);
-    //resetSelectIndex(filterSelectType);
+    resetSelectIndex(filterSelectType);
     displayCards(filterItemsApplication);
   });
 
@@ -42,6 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedValueOrder = event.target.value;
     const orderItemsName = sortData(data, "name", selectedValueOrder);
     displayCards(orderItemsName);
-
   }); 
 });
