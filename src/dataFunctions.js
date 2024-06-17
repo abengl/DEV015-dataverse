@@ -4,7 +4,6 @@ export function filterData(data, filterBy, value) {
 
 export function sortData(data, sortBy, sortOrder) {
   const dataCopy = data.map((obj) => obj);
-
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
   } else if (sortOrder === "desc") {
