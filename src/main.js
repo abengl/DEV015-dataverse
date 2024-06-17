@@ -1,4 +1,4 @@
-import { filterData, sortData } from "./dataFunctions.js";
+import { filterData, sortData, computeStats } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import data from "./data/dataset.js";
 
@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterSelectType = document.querySelector("#type-select");
   const filterSelectApplication = document.querySelector("#applicationField-select"); 
   const orderSelect = document.querySelector("#order-select");
-  const clearButton = document.querySelector('[data-testid="button-clear"]')
+  const clearButton = document.querySelector('[data-testid="button-clear"]');
+  const metricsButton = document.querySelector(".metrics");
 
   filterSelectType.addEventListener("change", (event) => {
     const selectedValueType = event.target.value;
@@ -34,12 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const selectedValueOrder = event.target.value;
       const orderItemsName = sortData(filterItemsType, "name", selectedValueOrder);
       displayCards(orderItemsName);
-    }); 
+      });
   });
-
+  
   filterSelectApplication.addEventListener("change", (event) => {
     const selectedValue = event.target.value;
-    const filterItemsApplication = filterData(data, "applicationField", selectedValue);
+    const filterItemsApplication = filterData(data, "applicationField", selectedValue);  
     resetSelectIndex(filterSelectType);
     displayCards(filterItemsApplication);
 
@@ -48,18 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
       const orderItemsName = sortData(filterItemsApplication, "name", selectedValueOrder);
       displayCards(orderItemsName);
     });
-
-  });
+  }); 
 
   orderSelect.addEventListener("change",(event) => {
     const selectedValueOrder = event.target.value;
     const orderItemsName = sortData(data, "name", selectedValueOrder);
     displayCards(orderItemsName);
-  }); 
-
+  });
+  
   clearButton.addEventListener("click", function () {
     mainElement.removeChild(ulElement);
     ulElement = renderItems(data);
     mainElement.appendChild(ulElement);
   });
+  
+  metricsButton.addEventListener("click", (event) => {
+    const metricsItems = computeStats(data);
+    displayCards(metricsItems);
+  }); 
+  
 });
