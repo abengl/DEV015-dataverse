@@ -13,11 +13,15 @@ export function sortData(data, sortBy, sortOrder) {
 }
 
 export function computeStats(data) {
-const dataCopy = data.map((obj) => obj);
+  const dataCopy = data.map((obj) => obj);
   return dataCopy.reduce((topObjects, currentObject) => {
     return topObjects
       .concat(currentObject)
-      .sort((a, b) => parseFloat(b.facts["percentageOfUsers"]) - parseFloat(a.facts["percentageOfUsers"]))
+      .sort(
+        (a, b) =>
+          parseFloat(b.facts["percentageOfUsers"]) -
+          parseFloat(a.facts["percentageOfUsers"])
+      )
       .slice(0, 3);
   }, []);
 }

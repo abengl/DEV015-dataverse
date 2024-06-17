@@ -6,7 +6,6 @@ const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
 
-
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
@@ -18,9 +17,10 @@ function displayCards(data) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  
   const filterSelectType = document.querySelector("#type-select");
-  const filterSelectApplication = document.querySelector("#applicationField-select"); 
+  const filterSelectApplication = document.querySelector(
+    "#applicationField-select"
+  );
   const orderSelect = document.querySelector("#order-select");
   const clearButton = document.querySelector('[data-testid="button-clear"]');
   const metricsButton = document.querySelector(".metrics");
@@ -31,41 +31,52 @@ document.addEventListener("DOMContentLoaded", () => {
     resetSelectIndex(filterSelectApplication);
     displayCards(filterItemsType);
 
-    orderSelect.addEventListener("change",(event) => {
+    orderSelect.addEventListener("change", (event) => {
       const selectedValueOrder = event.target.value;
-      const orderItemsName = sortData(filterItemsType, "name", selectedValueOrder);
+      const orderItemsName = sortData(
+        filterItemsType,
+        "name",
+        selectedValueOrder
+      );
       displayCards(orderItemsName);
-      });
+    });
   });
-  
+
   filterSelectApplication.addEventListener("change", (event) => {
     const selectedValue = event.target.value;
-    const filterItemsApplication = filterData(data, "applicationField", selectedValue);  
+    const filterItemsApplication = filterData(
+      data,
+      "applicationField",
+      selectedValue
+    );
     resetSelectIndex(filterSelectType);
     displayCards(filterItemsApplication);
 
-    orderSelect.addEventListener("change",(event) => {
+    orderSelect.addEventListener("change", (event) => {
       const selectedValueOrder = event.target.value;
-      const orderItemsName = sortData(filterItemsApplication, "name", selectedValueOrder);
+      const orderItemsName = sortData(
+        filterItemsApplication,
+        "name",
+        selectedValueOrder
+      );
       displayCards(orderItemsName);
     });
-  }); 
+  });
 
-  orderSelect.addEventListener("change",(event) => {
+  orderSelect.addEventListener("change", (event) => {
     const selectedValueOrder = event.target.value;
     const orderItemsName = sortData(data, "name", selectedValueOrder);
     displayCards(orderItemsName);
   });
-  
-  clearButton.addEventListener("click", function () {
+
+  clearButton.addEventListener("click", () => {
     mainElement.removeChild(ulElement);
     ulElement = renderItems(data);
     mainElement.appendChild(ulElement);
   });
-  
-  metricsButton.addEventListener("click", (event) => {
+
+  metricsButton.addEventListener("click", () => {
     const metricsItems = computeStats(data);
     displayCards(metricsItems);
-  }); 
-  
+  });
 });
