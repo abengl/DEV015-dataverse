@@ -6,8 +6,9 @@ export const renderItems = (data) => {
     liElement.classList.add("card");
     liElement.setAttribute("itemscope", "");
     liElement.setAttribute("itemtype", "https://schema.org/CreativeWork");
+    liElement.setAttribute("data-id", objeto.id);
 
-    liElement.innerHTML = `
+    liElement.innerHTML = ` 
         <div class="card-image">
           <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" itemprop="image"/>
           <span class="card-label type" itemprop="additionalType">${objeto.facts.type}</span>
