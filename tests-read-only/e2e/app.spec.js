@@ -101,10 +101,12 @@ test.describe('Pagina interraciones', () => {
       await selectFilter.selectOption({ index: 1 });
       const originalLis = await page.$$(liSelector);
       const originalIds = await getDataIds(originalLis);
+      console.log('Original IDs:', originalIds);
 
       await selectFilter.selectOption({ index: 2 });
       const currentLis = await page.$$(liSelector);
-      const currentIds = await getDataIds(currentLis)
+      const currentIds = await getDataIds(currentLis);
+      console.log('Current IDs:', currentIds);
       expect(originalIds).not.toEqual(currentIds);
     });
   });
