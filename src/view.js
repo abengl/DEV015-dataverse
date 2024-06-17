@@ -6,6 +6,7 @@ export const renderItems = (data) => {
     liElement.classList.add("card");
     liElement.setAttribute("itemscope", "");
     liElement.setAttribute("itemtype", "https://schema.org/CreativeWork");
+    liElement.setAttribute("data-id", objeto.id);
 
     liElement.innerHTML = `
         <div class="card-image">

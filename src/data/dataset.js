@@ -1,21 +1,6 @@
 export default [
 
     {
-      "id": "javascript",
-      "name": "JavaScript",
-      "shortDescription": "Lenguaje de programación para la web.",
-      "description": "JavaScript, además de ser esencial en el desarrollo web, es uno de los lenguajes más versátiles y populares en la actualidad. Su presencia es crucial tanto para aplicaciones web como para servidores, gracias a su compatibilidad con frameworks modernos como React y Node.js. La capacidad de JavaScript para crear interacciones dinámicas en páginas web lo hace invaluable en el ámbito del desarrollo. Su influencia se extiende a la creación de experiencias web complejas y altamente funcionales, convirtiéndolo en un recurso imprescindible para los desarrolladores modernos.",
-      "imageUrl": "/assets/image_1.jpeg",
-      "facts": {
-        "type": "Programming Language",
-        "applicationField": "Front-End Development",
-        "yearOfCreation": 1995,
-        "creator": "Brendan Eich",
-        "percentageOfUsers": "63.61%",
-        "difficultyLevel": "Bajo"
-      }
-    },
-    {
       "id": "html-css",
       "name": "HTML/CSS",
       "shortDescription": "HTML estructura el contenido web; CSS lo estiliza.",
@@ -358,6 +343,21 @@ export default [
         "creator": "Google Brain Team",
         "percentageOfUsers": "10.23%",
         "difficultyLevel": "Alto"
+      }
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "shortDescription": "Lenguaje de programación para la web.",
+      "description": "JavaScript, además de ser esencial en el desarrollo web, es uno de los lenguajes más versátiles y populares en la actualidad. Su presencia es crucial tanto para aplicaciones web como para servidores, gracias a su compatibilidad con frameworks modernos como React y Node.js. La capacidad de JavaScript para crear interacciones dinámicas en páginas web lo hace invaluable en el ámbito del desarrollo. Su influencia se extiende a la creación de experiencias web complejas y altamente funcionales, convirtiéndolo en un recurso imprescindible para los desarrolladores modernos.",
+      "imageUrl": "/assets/image_1.jpeg",
+      "facts": {
+        "type": "Programming Language",
+        "applicationField": "Front-End Development",
+        "yearOfCreation": 1995,
+        "creator": "Brendan Eich",
+        "percentageOfUsers": "63.61%",
+        "difficultyLevel": "Bajo"
       }
     }
   
