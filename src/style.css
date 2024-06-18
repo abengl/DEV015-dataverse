@@ -5,16 +5,20 @@
   --fw-normal: 400;
   --fw-bold: 700;
 
-  --fs-small: 0.875rem; /* 14px */
-  --fs-normal: 1rem; /* 16px */
+  --fs-small: 0.7rem; /* 14px */
+  --fs-normal: 0.9rem; /* 16px */
   --fs-large: 1.25rem; /* 20px */
-  --fs-extra-large: 1.7rem; /* 30px */
+  --fs-extra-large: 2rem; /* 30px */
 
   --lh-small: 1.4;
   --lh-normal: 1.6;
 
   --tx-color-light: #FFF;
+  --tx-color-medim: #545465;
   --tx-color-dark: #2B2A35;
+
+  --clr-neutro-light: #F0EFF4;
+  --clr-neutro-dark: #d7d7d7;
   --clr-accent-yellow: #FBCC2B;
   --clr-primary-dark: #5318EB;
   --clr-primary-light: #AB6EF9;
@@ -33,6 +37,7 @@ body {
   font-weight: var(--fw-normal);
   line-height: var(--lh-normal);
   width: 100%;
+  background-color: var(--clr-neutro-light);
 }
 
 /*Logo*/
@@ -104,6 +109,7 @@ nav {
   gap: 20px;
   padding: 30px 0;
 }
+
 /*Propiedades de prueba*/
 select {
   padding: 10px;
@@ -118,6 +124,12 @@ select {
   width: 250px;
   height: 45px;
 }
+
+option { 
+  background-color: var(--tx-color-light); /* Fondo de las opciones */ 
+  color: var(--tx-color-dark); /* Color de texto de las opciones */ 
+} /* Estilo personalizado para el icono de la lista desplegable */
+
 /*Select 1 : Tipo*/
 #type-select {
   padding: 0px 10px;
@@ -131,6 +143,7 @@ select {
   width: 180px;
   padding: 0px 10px;
 }
+
 /*Propiedades de prueba*/
 button {
   padding: 10px 20px;
@@ -158,13 +171,15 @@ button {
   color: #371689;
   border: none;
 }
+
 /*-----------------------------------------------------------*/
 
-/*
+
 main {
   margin: 0;
+  background-color: transparent;
 }
-  */
+
 
 /*Container de todas las cards*/
 ul {
@@ -178,10 +193,9 @@ ul {
 
 /*Container de una sola card*/
 .card {
-  border: 1px solid #eee;
   flex: 1 1 300px;
   background-color: white;
-  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(103, 110, 144, 0.15);
   border-radius: 15px;
   transition: transform 0.3s ease-in-out;
 }
@@ -204,45 +218,6 @@ ul {
   border-radius: 15px 15px 0 0;
   margin-bottom: 10px;
 }
-
-.card-label {
-  font-size: 12px;
-  background-color: rgba(255, 255, 255, 0.824);
-  position: absolute;
-  margin: 10px;
-  padding: 3px 5px;
-  border-radius: 5px;
-  border: 1px solid var(--clr-neutral-600);
-}
-
-.card-label.type {
-  top: 0;
-  left: 0;
-}
-
-.card-label.field {
-  top: 12%;
-  left: 0;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  margin: 10px;
-  top: 0;
-  right: 0;
-  border-radius: 1.25rem;
-}
-
-.icon.Bajo {
-  background-color: var(--clr-primary-green);
-}
-
-.icon.Alto {
-  background-color: var(--clr-primary-red);
-}
-
 
 /*Container de todo el texto*/
 .card-content {
@@ -268,21 +243,64 @@ ul {
   line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+.card-text.year, .card-text.creator {
+  color: var(--tx-color-medim);
+}
 
 .card-text.users {
   display: none;
 }
 
+.label-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card-label {
+  font-size: var(--fs-small);
+  margin: 15px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 2px solid var(--clr-neutro-light);
+}
+/*
+.card-label.type {
+
+}
+
+.card-label.field {
+
+}
+*/
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  border-radius: 1.25rem;
+}
+
+.icon.Bajo {
+  background-color: #c9a223;
+}
+
+.icon.Alto {
+  background-color: var(--clr-primary-dark);
+}
+
+
 /*Propiedades de Prueba*/
 footer {
+  background-color: transparent;
+  border-top: 2px solid var(--clr-neutro-dark);
   height: 130px;
   width: 100%;
-  /*padding: 20px 350px 20px 20px;*/
+  margin-top: 50px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .logo-container-footer {
