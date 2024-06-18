@@ -6,9 +6,9 @@ export function sortData(data, sortBy, sortOrder) {
   const dataCopy = data.map((obj) => obj);
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
-  } else if (sortOrder === "desc") {
+  } else {
     return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
-  }
+  } 
 }
 
 export function computeStats(data) {
