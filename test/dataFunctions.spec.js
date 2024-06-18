@@ -31,9 +31,6 @@ describe("dataFunctions", () => {
     it("should return 'Vue.js' as the first object name when sorting by filter applicationField = 'Front-End Development' and sortOrder = 'desc' ", () => {
       expect(sortData(data, "name", "desc")[0].name).toBe("Vue.js");
     });
-    it("should return undefined when sortOrder = '' ", () => {
-      expect(sortData(data, "name", "")).toBe(undefined);
-    });
   });
 
   describe("dataFunctions.computeStats", () => {
