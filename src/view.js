@@ -11,16 +11,18 @@ export const renderItems = (data) => {
     liElement.innerHTML = ` 
         <div class="card-image">
           <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" itemprop="image"/>
-          <span class="card-label type" itemprop="additionalType">${objeto.facts.type}</span>
-          <img src="assets/fire.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="educationalLevel" />
-          <span class="card-label field" itemprop="exampleOfWork">${objeto.facts.applicationField}</span>
         </div>
         <div class="card-content">
           <h3 class="card-text name" itemprop="name">${objeto.name}</h3>
-          <p class="card-text description" itemprop="description">${objeto.description}</p>
-          <span class="card-text year" itemprop="dateCreated">Creado en: ${objeto.facts.yearOfCreation}</span>
-          <span class="card-text creator" itemprop="creator">Autor: ${objeto.facts.creator}</span>
+          <p class="card-text description" itemprop="description">${objeto.shortDescription}</p>
+          <span class="card-text year" itemprop="dateCreated"><b>Creado en:</b> ${objeto.facts.yearOfCreation}</span>
+          <span class="card-text creator" itemprop="creator"><b>Autor:</b> ${objeto.facts.creator}</span>
           <span class="card-text users" itemprop="usageInfo">${objeto.facts.percentageOfUsers}</span>
+          <div class="label-container">
+            <span class="card-label type" itemprop="additionalType">${objeto.facts.type}</span>
+            <span class="card-label field" itemprop="exampleOfWork">${objeto.facts.applicationField}</span>
+            <img src="assets/fire.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="educationalLevel" />
+          </div>
         </div>
       `;
 
