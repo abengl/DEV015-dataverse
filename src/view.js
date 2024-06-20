@@ -21,7 +21,8 @@ export const renderItems = (data) => {
           <span class="card-text year" itemprop="dateCreated"><span class="bold">Creado en:</span> ${objeto.facts.yearOfCreation}</span>
           <span class="card-text creator" itemprop="creator"><span class="bold">Autor:</span> ${objeto.facts.creator}</span>
           <span class="card-text users" itemprop="usageInfo">${objeto.facts.percentageOfUsers}</span>
-          <div class="label-container">
+        </div>
+        <div class="label-container">
             <div class="item-label type">
               <img class="label-icon type" src="${objeto.extraInfo.iconTypeUrl}" alt="Type" itemprop="image"/>
               <span class="card-label type" itemprop="additionalType">Tipo ${objeto.facts.type}</span>
@@ -35,7 +36,6 @@ export const renderItems = (data) => {
               <span class="card-label difficulty" itemprop="educationalLevel">Dificultad ${objeto.facts.difficultyLevel}</span>
             </div>
           </div>
-        </div>
       `;
 
     //Añadimos los li al elemento ul
