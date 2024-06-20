@@ -235,6 +235,13 @@ ul {
   font-weight: 600;
 }
 
+.name-image {
+  width: 15px;
+  height: 15px;
+}
+
+
+
 .card-text.description {
   display: -webkit-box;
   overflow: hidden;
@@ -252,14 +259,26 @@ ul {
 }
 
 .label-container {
+  height: 50px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   text-align: center;
 }
 
+.item-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-icon {
+  width: 15px;
+  height: 15px;
+}
+
 .card-label {
   font-size: var(--fs-small);
-  margin: 15px;
+  margin: 10px;
   padding: 3px 5px;
   border-radius: 5px;
   border: 2px solid var(--clr-neutro-light);
