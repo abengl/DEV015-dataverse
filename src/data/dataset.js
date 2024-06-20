@@ -1,9 +1,88 @@
 export default [
-
+    {
+      "id": "react",
+      "name": "React",
+      "shortDescription": "Biblioteca de JavaScript para construir interfaces de usuario rápidas e interactivas.",
+      "description": "React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario dinámicas y eficientes, especialmente para aplicaciones de una sola página. Con React, los desarrolladores pueden crear componentes de UI reutilizables, lo que agiliza el proceso de desarrollo y lo hace más escalable. Además, la característica del virtual DOM de React optimiza el renderizado, lo que resulta en un mejor rendimiento para las aplicaciones web. Esta combinación de flexibilidad y rendimiento hace que React sea una opción popular para una variedad de proyectos de desarrollo de software en la actualidad.",
+      "imageUrl": "/assets/images/image_14.jpeg",
+      "facts": {
+        "type": "Framework",
+        "applicationField": "Front-End",
+        "yearOfCreation": 2013,
+        "creator": "Jordan Walke",
+        "percentageOfUsers": "40.58%",
+        "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "/assets/icons/framework.svg",
+        "iconApplicationUrl": "/assets/icons/frontend.svg",
+        "logoUrl": "/assets/logos/react.svg" 
+      }
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "shortDescription": "Framework de JavaScript para construir aplicaciones web dinámicas.",
+      "description": "Angular es un potente framework de desarrollo frontend, respaldado por Google, que se basa en JavaScript y TypeScript para crear aplicaciones web dinámicas y de una sola página (SPA). Gracias a su estructura robusta y su arquitectura escalable, Angular es una opción popular para proyectos de gran envergadura. Entre sus características más destacadas se encuentran la inyección de dependencias, el enlace de datos bidireccional y la creación de componentes modulares, lo que simplifica enormemente el desarrollo y mantenimiento de aplicaciones web complejas.",
+      "imageUrl": "/assets/images/image_17.jpeg",
+      "facts": {
+        "type": "Framework",
+        "applicationField": "Front-End",
+        "yearOfCreation": 2010,
+        "creator": "Google",
+        "percentageOfUsers": "22.96%",
+        "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "/assets/icons/framework.svg",
+        "iconApplicationUrl": "/assets/icons/frontend.svg",
+        "logoUrl": "/assets/logos/angular.svg" 
+      }
+    },
+    {
+      "id": "node-js",
+      "name": "Node.js",
+      "shortDescription": "Entorno de ejecución de JavaScript para el desarrollo de aplicaciones del lado del servidor.",
+      "description": "Node.js es un entorno de ejecución de JavaScript que capacita a los desarrolladores para crear aplicaciones del lado del servidor con este lenguaje. Destaca por su modelo de E/S no bloqueante, lo que le permite manejar eficientemente numerosas conexiones concurrentes. Reconocido ampliamente en la industria, Node.js es la elección principal para el desarrollo de aplicaciones web y APIs escalables. Su ecosistema sólido y las herramientas integradas fomentan la productividad y el rendimiento, facilitando la creación de aplicaciones robustas y eficientes.",
+      "imageUrl": "/assets/images/image_15.jpeg",
+      "facts": {
+        "type": "Framework",
+        "applicationField": "Backend",
+        "yearOfCreation": 2009,
+        "creator": "Ryan Dahl",
+        "percentageOfUsers": "33.91%",
+        "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "/assets/icons/framework.svg",
+        "iconApplicationUrl": "/assets/icons/backend.svg",
+        "logoUrl": "/assets/logos/node-js.svg" 
+      }
+    },
+    {
+      "id": "c-sharp",
+      "name": "C#",
+      "shortDescription": "Lenguaje de programación moderno y versátil desarrollado por Microsoft.",
+      "description": "C# es un lenguaje de programación moderno y versátil desarrollado por Microsoft como parte del framework .NET. Es ampliamente utilizado en el desarrollo de software, desde aplicaciones de escritorio hasta soluciones empresariales y plataformas web. La combinación de la potencia del C++ con la simplicidad del Visual Basic lo hace atractivo para desarrolladores de diferentes niveles de experiencia. Su evolución constante y una comunidad activa aseguran que C# continúe siendo relevante en el panorama tecnológico en constante evolución, adaptándose a las demandas del mercado y las necesidades de los desarrolladores.",
+      "imageUrl": "/assets/images/image_7.jpeg",
+      "facts": {
+        "type": "Language",
+        "applicationField": "Backend",
+        "yearOfCreation": 2000,
+        "creator": "Microsoft",
+        "percentageOfUsers": "26.7%",
+        "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "/assets/icons/programming.svg",
+        "iconApplicationUrl": "/assets/icons/backend.svg",
+        "logoUrl": "/assets/logos/c-sharp.svg" 
+      }
+    },
     {
       "id": "html-css",
       "name": "HTML/CSS",
-      "shortDescription": "HTML estructura el contenido web; CSS lo estiliza.",
+      "shortDescription": "HTML estructura el contenido web; CSS lo estiliza. Usa tags para definir elementos.",
       "description": "HTML (HyperText Markup Language) y CSS (Cascading Style Sheets) son tecnologías fundamentales para la creación de páginas web. HTML estructura el contenido, definiendo elementos como encabezados, párrafos, imágenes y otros elementos multimedia, mientras que CSS estiliza el contenido, controlando el diseño, colores, fuentes, espaciado y apariencia general. Además, facilita la creación de diseños responsivos y adaptables a diferentes dispositivos y tamaños de pantalla. Juntos, permiten la creación de sitios web visualmente atractivos, altamente funcionales y bien organizados, proporcionando una experiencia de usuario óptima.",
       "imageUrl": "/assets/images/image_2.jpeg",
       "facts": {
@@ -48,7 +127,7 @@ export default [
       "imageUrl": "/assets/images/image_4.jpeg",
       "facts": {
         "type": "Language",
-        "applicationField": "Data Science",
+        "applicationField": "Data",
         "yearOfCreation": 1991,
         "creator": "Guido van Rossum",
         "percentageOfUsers": "48.07%",
@@ -98,26 +177,6 @@ export default [
         "iconTypeUrl": "/assets/icons/programming.svg",
         "iconApplicationUrl": "/assets/icons/frontend.svg",
         "logoUrl": "/assets/logos/typescript.svg" 
-      }
-    },
-    {
-      "id": "c-sharp",
-      "name": "C#",
-      "shortDescription": "Lenguaje de programación moderno y versátil desarrollado por Microsoft.",
-      "description": "C# es un lenguaje de programación moderno y versátil desarrollado por Microsoft como parte del framework .NET. Es ampliamente utilizado en el desarrollo de software, desde aplicaciones de escritorio hasta soluciones empresariales y plataformas web. La combinación de la potencia del C++ con la simplicidad del Visual Basic lo hace atractivo para desarrolladores de diferentes niveles de experiencia. Su evolución constante y una comunidad activa aseguran que C# continúe siendo relevante en el panorama tecnológico en constante evolución, adaptándose a las demandas del mercado y las necesidades de los desarrolladores.",
-      "imageUrl": "/assets/images/image_7.jpeg",
-      "facts": {
-        "type": "Language",
-        "applicationField": "Backend",
-        "yearOfCreation": 2000,
-        "creator": "Microsoft",
-        "percentageOfUsers": "26.7%",
-        "difficultyLevel": "Alto"
-      }, 
-      "extraInfo": {
-        "iconTypeUrl": "/assets/icons/programming.svg",
-        "iconApplicationUrl": "/assets/icons/backend.svg",
-        "logoUrl": "/assets/logos/c-sharp.svg" 
       }
     },
     {
@@ -241,46 +300,6 @@ export default [
       }
     },
     {
-      "id": "react",
-      "name": "React",
-      "shortDescription": "Biblioteca de JavaScript para construir interfaces de usuario rápidas e interactivas.",
-      "description": "React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario dinámicas y eficientes, especialmente para aplicaciones de una sola página. Con React, los desarrolladores pueden crear componentes de UI reutilizables, lo que agiliza el proceso de desarrollo y lo hace más escalable. Además, la característica del virtual DOM de React optimiza el renderizado, lo que resulta en un mejor rendimiento para las aplicaciones web. Esta combinación de flexibilidad y rendimiento hace que React sea una opción popular para una variedad de proyectos de desarrollo de software en la actualidad.",
-      "imageUrl": "/assets/images/image_14.jpeg",
-      "facts": {
-        "type": "Framework",
-        "applicationField": "Front-End",
-        "yearOfCreation": 2013,
-        "creator": "Jordan Walke",
-        "percentageOfUsers": "40.58%",
-        "difficultyLevel": "Bajo"
-      }, 
-      "extraInfo": {
-        "iconTypeUrl": "/assets/icons/framework.svg",
-        "iconApplicationUrl": "/assets/icons/frontend.svg",
-        "logoUrl": "/assets/logos/react.svg" 
-      }
-    },
-    {
-      "id": "node-js",
-      "name": "Node.js",
-      "shortDescription": "Entorno de ejecución de JavaScript para el desarrollo de aplicaciones del lado del servidor.",
-      "description": "Node.js es un entorno de ejecución de JavaScript que capacita a los desarrolladores para crear aplicaciones del lado del servidor con este lenguaje. Destaca por su modelo de E/S no bloqueante, lo que le permite manejar eficientemente numerosas conexiones concurrentes. Reconocido ampliamente en la industria, Node.js es la elección principal para el desarrollo de aplicaciones web y APIs escalables. Su ecosistema sólido y las herramientas integradas fomentan la productividad y el rendimiento, facilitando la creación de aplicaciones robustas y eficientes.",
-      "imageUrl": "/assets/images/image_15.jpeg",
-      "facts": {
-        "type": "Framework",
-        "applicationField": "Backend",
-        "yearOfCreation": 2009,
-        "creator": "Ryan Dahl",
-        "percentageOfUsers": "33.91%",
-        "difficultyLevel": "Bajo"
-      }, 
-      "extraInfo": {
-        "iconTypeUrl": "/assets/icons/framework.svg",
-        "iconApplicationUrl": "/assets/icons/backend.svg",
-        "logoUrl": "/assets/logos/node-js.svg" 
-      }
-    },
-    {
       "id": "django",
       "name": "Django",
       "shortDescription": "Framework web de alto nivel para el desarrollo rápido de aplicaciones web con Python.",
@@ -298,26 +317,6 @@ export default [
         "iconTypeUrl": "/assets/icons/framework.svg",
         "iconApplicationUrl": "/assets/icons/backend.svg",
         "logoUrl": "/assets/logos/django.svg" 
-      }
-    },
-    {
-      "id": "angular",
-      "name": "Angular",
-      "shortDescription": "Framework de JavaScript para construir aplicaciones web dinámicas.",
-      "description": "Angular es un potente framework de desarrollo frontend, respaldado por Google, que se basa en JavaScript y TypeScript para crear aplicaciones web dinámicas y de una sola página (SPA). Gracias a su estructura robusta y su arquitectura escalable, Angular es una opción popular para proyectos de gran envergadura. Entre sus características más destacadas se encuentran la inyección de dependencias, el enlace de datos bidireccional y la creación de componentes modulares, lo que simplifica enormemente el desarrollo y mantenimiento de aplicaciones web complejas.",
-      "imageUrl": "/assets/images/image_17.jpeg",
-      "facts": {
-        "type": "Framework",
-        "applicationField": "Front-End",
-        "yearOfCreation": 2010,
-        "creator": "Google",
-        "percentageOfUsers": "22.96%",
-        "difficultyLevel": "Alto"
-      }, 
-      "extraInfo": {
-        "iconTypeUrl": "/assets/icons/framework.svg",
-        "iconApplicationUrl": "/assets/icons/frontend.svg",
-        "logoUrl": "/assets/logos/angular.svg" 
       }
     },
     {
@@ -383,7 +382,7 @@ export default [
     {
       "id": "flask",
       "name": "Flask",
-      "shortDescription": "Microframework web para Python, minimalista y flexible.",
+      "shortDescription": "Microframework web para Python, minimalista y flexible. Ideal para proyectos pequeños.",
       "description": "Flask es un ligero y versátil microframework web para Python, apreciado por su estructura minimalista que brinda una gran flexibilidad para el desarrollo de aplicaciones web. A diferencia de frameworks más robustos, como Django, Flask no impone restricciones rígidas sobre la arquitectura de la aplicación, otorgando a los desarrolladores un mayor control y libertad para estructurar sus proyectos según sus necesidades específicas. Esta característica lo hace especialmente adecuado para proyectos de tamaño mediano o pequeño que requieren agilidad y personalización en su desarrollo.",
       "imageUrl": "/assets/images/image_21.jpeg",
       "facts": {
@@ -448,7 +447,7 @@ export default [
       "imageUrl": "/assets/images/image_24.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Data Science",
+        "applicationField": "Data",
         "yearOfCreation": 2015,
         "creator": "Google Brain Team",
         "percentageOfUsers": "10.23%",
@@ -463,7 +462,7 @@ export default [
     {
       "id": "javascript",
       "name": "JavaScript",
-      "shortDescription": "Lenguaje de programación para la web.",
+      "shortDescription": "Lenguaje de programación para la web. Permite crear páginas interactivas.",
       "description": "JavaScript, además de ser esencial en el desarrollo web, es uno de los lenguajes más versátiles y populares en la actualidad. Su presencia es crucial tanto para aplicaciones web como para servidores, gracias a su compatibilidad con frameworks modernos como React y Node.js. La capacidad de JavaScript para crear interacciones dinámicas en páginas web lo hace invaluable en el ámbito del desarrollo. Su influencia se extiende a la creación de experiencias web complejas y altamente funcionales, convirtiéndolo en un recurso imprescindible para los desarrolladores modernos.",
       "imageUrl": "/assets/images/image_1.jpeg",
       "facts": {
