@@ -22,16 +22,16 @@ export const renderItems = (data) => {
           <span class="card-text creator" itemprop="creator"><span class="bold">Autor:</span> ${objeto.facts.creator}</span>
           <span class="card-text users" itemprop="usageInfo">${objeto.facts.percentageOfUsers}</span>
           <div class="label-container">
-            <div class="item-label type>
-              <img src="${objeto.extraInfo.iconTypeUrl}" alt="Type" class="label-icon type" itemprop="image" />
+            <div class="item-label type">
+              <img class="label-icon type" src="${objeto.extraInfo.iconTypeUrl}" alt="Type" itemprop="image"/>
               <span class="card-label type" itemprop="additionalType">Tipo ${objeto.facts.type}</span>
             </div>
-            <div class="item-label application>
-              <img src="${objeto.extraInfo.iconApplicationUrl}" alt="Application" class="label-icon application" itemprop="image" />
+            <div class="item-label application">
+              <img class="label-icon application" src="${objeto.extraInfo.iconApplicationUrl}" alt="Application" itemprop="image"/>
               <span class="card-label field" itemprop="exampleOfWork">Aplicación ${objeto.facts.applicationField}</span>
             </div>
-            <div class="item-label difficulty>
-              <img src="assets/icons/fire.svg" alt="difficulty level" class="label-icon ${objeto.facts.difficultyLevel}" itemprop="image" />
+            <div class="item-label difficulty">
+              <img class="label-icon ${objeto.facts.difficultyLevel}" src="/assets/icons/fire.svg" alt="difficulty level" itemprop="image"/>
               <span class="card-label difficulty" itemprop="educationalLevel">Dificultad ${objeto.facts.difficultyLevel}</span>
             </div>
           </div>
