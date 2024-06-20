@@ -13,15 +13,27 @@ export const renderItems = (data) => {
           <img class="image" src="${objeto.imageUrl}" alt="${objeto.name}" itemprop="image"/>
         </div>
         <div class="card-content">
-          <h3 class="card-text name" itemprop="name">${objeto.name}</h3>
+          <div class="name-content">
+            <h3 class="card-text name" itemprop="name">${objeto.name}</h3>
+            <img class="name-image" src="${objeto.extraInfo.logoUrl}" alt="${objeto.name}" itemprop="image"/>
+          </div>
           <p class="card-text description" itemprop="description">${objeto.shortDescription}</p>
-          <span class="card-text year" itemprop="dateCreated"><b>Creado en:</b> ${objeto.facts.yearOfCreation}</span>
-          <span class="card-text creator" itemprop="creator"><b>Autor:</b> ${objeto.facts.creator}</span>
+          <span class="card-text year" itemprop="dateCreated"><span class="bold">Creado en:</span> ${objeto.facts.yearOfCreation}</span>
+          <span class="card-text creator" itemprop="creator"><span class="bold">Autor:</span> ${objeto.facts.creator}</span>
           <span class="card-text users" itemprop="usageInfo">${objeto.facts.percentageOfUsers}</span>
           <div class="label-container">
-            <span class="card-label type" itemprop="additionalType">${objeto.facts.type}</span>
-            <span class="card-label field" itemprop="exampleOfWork">${objeto.facts.applicationField}</span>
-            <img src="assets/fire.svg" alt="difficulty level" class="icon ${objeto.facts.difficultyLevel}" itemprop="educationalLevel" />
+            <div class="item-label type>
+              <img src="${objeto.extraInfo.iconTypeUrl}" alt="Type" class="label-icon type" itemprop="image" />
+              <span class="card-label type" itemprop="additionalType">Tipo ${objeto.facts.type}</span>
+            </div>
+            <div class="item-label application>
+              <img src="${objeto.extraInfo.iconApplicationUrl}" alt="Application" class="label-icon application" itemprop="image" />
+              <span class="card-label field" itemprop="exampleOfWork">Aplicación ${objeto.facts.applicationField}</span>
+            </div>
+            <div class="item-label difficulty>
+              <img src="assets/icons/fire.svg" alt="difficulty level" class="label-icon ${objeto.facts.difficultyLevel}" itemprop="image" />
+              <span class="card-label difficulty" itemprop="educationalLevel">Dificultad ${objeto.facts.difficultyLevel}</span>
+            </div>
           </div>
         </div>
       `;

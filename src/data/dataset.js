@@ -7,12 +7,17 @@ export default [
       "description": "HTML (HyperText Markup Language) y CSS (Cascading Style Sheets) son tecnologías fundamentales para la creación de páginas web. HTML estructura el contenido, definiendo elementos como encabezados, párrafos, imágenes y otros elementos multimedia, mientras que CSS estiliza el contenido, controlando el diseño, colores, fuentes, espaciado y apariencia general. Además, facilita la creación de diseños responsivos y adaptables a diferentes dispositivos y tamaños de pantalla. Juntos, permiten la creación de sitios web visualmente atractivos, altamente funcionales y bien organizados, proporcionando una experiencia de usuario óptima.",
       "imageUrl": "/assets/image_2.jpeg",
       "facts": {
-        "type": "Markup Language",
-        "applicationField": "Front-End Development",
+        "type": "Markup",
+        "applicationField": "Front-End",
         "yearOfCreation": 1991,
         "creator": "Tim Berners-Lee y Hakon Wium Lie",
         "percentageOfUsers": "52.97%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/markup.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/html-css.svg" 
       }
     },
     {
@@ -22,12 +27,17 @@ export default [
       "description": "SQL (Structured Query Language) es un lenguaje estándar para gestionar y manipular bases de datos. Además de su papel esencial en el desarrollo backend y el análisis de datos, SQL se destaca por su capacidad para administrar grandes volúmenes de información de manera eficiente y segura. Su sintaxis clara y sus poderosos comandos facilitan la manipulación de datos y la realización de consultas complejas. SQL sigue siendo fundamental en el panorama tecnológico actual, siendo utilizado en una amplia gama de aplicaciones y entornos empresariales.",
       "imageUrl": "/assets/image_3.jpeg",
       "facts": {
-        "type": "Database Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 1974,
         "creator": "Donald D. Chamberlin y Raymond F. Boyce",
         "percentageOfUsers": "48.66%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/sql.svg" 
       }
     },
     {
@@ -37,12 +47,17 @@ export default [
       "description": "Python es un lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad. Su versatilidad lo hace ideal para una amplia gama de aplicaciones, desde desarrollo web y ciencia de datos hasta automatización y scripting. La gran cantidad de bibliotecas y frameworks disponibles para Python lo convierten en una herramienta poderosa y flexible para los desarrolladores. Su comunidad activa y su continua evolución aseguran que Python siga siendo una opción líder en el mundo del desarrollo de software.",
       "imageUrl": "/assets/image_4.jpeg",
       "facts": {
-        "type": "Programming Language",
+        "type": "Language",
         "applicationField": "Data Science",
         "yearOfCreation": 1991,
         "creator": "Guido van Rossum",
         "percentageOfUsers": "48.07%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/datascience.svg",
+        "logoUrl": "asset/logos/python.svg" 
       }
     },
     {
@@ -52,12 +67,17 @@ export default [
       "description": "Java es un lenguaje de programación orientado a objetos ampliamente utilizado en el desarrollo de aplicaciones empresariales y móviles. Su robustez y portabilidad lo convierten en una opción preferida para una variedad de aplicaciones. Java ofrece una amplia gama de bibliotecas y herramientas que facilitan el desarrollo de software escalable y seguro. Además, su comunidad activa y su sólido soporte garantizan que Java siga siendo relevante en un panorama tecnológico en constante evolución, consolidándolo como una opción confiable para desarrolladores en todo el mundo.",
       "imageUrl": "/assets/image_5.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 1995,
         "creator": "James Gosling",
         "percentageOfUsers": "34.31%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/java.svg" 
       }
     },
     {
@@ -67,12 +87,17 @@ export default [
       "description": "ypeScript es un superconjunto de JavaScript que añade tipos estáticos opcionales y otras características avanzadas para mejorar la productividad del desarrollo. Desarrollado por Microsoft, TypeScript se ha convertido en una herramienta fundamental para proyectos de gran escala, donde la robustez y la escalabilidad del código son críticas. Al permitir la detección temprana de errores, TypeScript ayuda a garantizar la calidad del código y facilita su mantenimiento a lo largo del tiempo, lo que lo convierte en una elección popular entre los desarrolladores en la actualidad.",
       "imageUrl": "/assets/image_6.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Front-End Development",
+        "type": "Language",
+        "applicationField": "Front-End",
         "yearOfCreation": 2012,
         "creator": "Microsoft",
         "percentageOfUsers": "27.58%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/typescript.svg" 
       }
     },
     {
@@ -82,12 +107,17 @@ export default [
       "description": "C# es un lenguaje de programación moderno y versátil desarrollado por Microsoft como parte del framework .NET. Es ampliamente utilizado en el desarrollo de software, desde aplicaciones de escritorio hasta soluciones empresariales y plataformas web. La combinación de la potencia del C++ con la simplicidad del Visual Basic lo hace atractivo para desarrolladores de diferentes niveles de experiencia. Su evolución constante y una comunidad activa aseguran que C# continúe siendo relevante en el panorama tecnológico en constante evolución, adaptándose a las demandas del mercado y las necesidades de los desarrolladores.",
       "imageUrl": "/assets/image_7.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 2000,
         "creator": "Microsoft",
         "percentageOfUsers": "26.7%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/c-sharp.svg" 
       }
     },
     {
@@ -97,12 +127,17 @@ export default [
       "description": "PHP, un lenguaje de programación orientado al desarrollo web del lado del servidor, es ampliamente reconocido por su versatilidad y facilidad de integración con bases de datos y otros sistemas. Es especialmente popular en la creación de sitios web dinámicos e interactivos, gracias a su compatibilidad con numerosos frameworks y sistemas de gestión de contenido como WordPress. Su robustez y flexibilidad lo convierten en una opción preferida para desarrolladores web que buscan construir aplicaciones escalables y de alto rendimiento en el entorno digital actual.",
       "imageUrl": "/assets/image_8.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 1994,
         "creator": "Rasmus Lerdorf",
         "percentageOfUsers": "21.26%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/php.svg" 
       }
     },
     {
@@ -112,12 +147,17 @@ export default [
       "description": "C++, un lenguaje de programación de propósito general y orientado a objetos, se destaca como una extensión del reconocido lenguaje C. Su versatilidad lo convierte en la opción predilecta para el desarrollo de una variedad de sistemas, desde sistemas operativos hasta aplicaciones de alto rendimiento y motores de juegos. La flexibilidad y el control que ofrece sobre los recursos del hardware hacen de C++ una herramienta indispensable para aplicaciones críticas que requieren un alto rendimiento y una gestión eficiente de los recursos.",
       "imageUrl": "/assets/image_9.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 1983,
         "creator": "Bjarne Stroustrup",
         "percentageOfUsers": "20.41%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/c-plus-plus.svg" 
       }
     },
     {
@@ -127,12 +167,17 @@ export default [
       "description": "Go, también conocido como Golang, es un lenguaje de programación desarrollado por Google que se destaca por su eficiencia y capacidad para manejar la concurrencia, convirtiéndolo en una opción ideal para el desarrollo de aplicaciones de red y servicios backend. Al fusionar la simplicidad y la eficiencia del C con características modernas como la recolección de basura y la tipificación estática, Go facilita la creación de software robusto y de alto rendimiento, lo que satisface las demandas de aplicaciones modernas y escalables en el entorno tecnológico actual.",
       "imageUrl": "/assets/image_10.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 2009,
         "creator": "Robert Griesemer, Rob Pike, y Ken Thompson",
         "percentageOfUsers": "18.21%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/go.svg" 
       }
     },
     {
@@ -142,12 +187,17 @@ export default [
       "description": "Rust es un lenguaje de programación de sistemas que destaca por su énfasis en la seguridad y el rendimiento. Reconocido por su capacidad para prevenir errores de memoria y concurrencia, es especialmente adecuado para el desarrollo de software crítico y de alto rendimiento. Al fusionar el control de bajo nivel del C++ con una moderna gestión de memoria, Rust ofrece una sintaxis clara y una sólida comunidad de soporte, lo que lo convierte en una opción atractiva para una amplia gama de aplicaciones en el ámbito del desarrollo de software.",
       "imageUrl": "/assets/image_11.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 2010,
         "creator": "Graydon Hoare",
         "percentageOfUsers": "15.11%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/rust.svg" 
       }
     },
     {
@@ -157,12 +207,17 @@ export default [
       "description": "Kotlin es un lenguaje de programación moderno y conciso que se ejecuta en la Máquina Virtual Java (JVM). Desarrollado por JetBrains, Kotlin es totalmente interoperable con Java y es el lenguaje preferido para el desarrollo de aplicaciones Android. Ofrece características avanzadas como la inferencia de tipos y la programación funcional, mejorando la productividad y reduciendo la cantidad de código. Su creciente popularidad lo convierte en una opción cada vez más atractiva para los desarrolladores móviles en el ecosistema de Android.",
       "imageUrl": "/assets/image_12.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 2011,
         "creator": "JetBrains",
         "percentageOfUsers": "12.97%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/kotlin.svg" 
       }
     },
     {
@@ -172,12 +227,17 @@ export default [
       "description": "Ruby es un lenguaje de programación dinámico y fácil de leer, apreciado por su simplicidad y eficacia. Con su popular framework Ruby on Rails, es una opción común en el desarrollo web. Su enfoque en la simplicidad y la productividad fomenta la escritura de código limpio y mantenible de manera eficiente. Además, su comunidad activa y su ecosistema consolidado lo hacen ideal para una amplia gama de proyectos de software en el panorama actual, desde aplicaciones web hasta sistemas empresariales.",
       "imageUrl": "/assets/image_13.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Backend Development",
+        "type": "Language",
+        "applicationField": "Backend",
         "yearOfCreation": 1995,
         "creator": "Yukihiro Matsumoto",
         "percentageOfUsers": "11.39%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/programming.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/ruby.svg" 
       }
     },
     {
@@ -188,11 +248,16 @@ export default [
       "imageUrl": "/assets/image_14.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Front-End Development",
+        "applicationField": "Front-End",
         "yearOfCreation": 2013,
         "creator": "Jordan Walke",
         "percentageOfUsers": "40.58%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/react.svg" 
       }
     },
     {
@@ -203,11 +268,16 @@ export default [
       "imageUrl": "/assets/image_15.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2009,
         "creator": "Ryan Dahl",
         "percentageOfUsers": "33.91%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/node-js.svg" 
       }
     },
     {
@@ -218,11 +288,16 @@ export default [
       "imageUrl": "/assets/image_16.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2005,
         "creator": "Adrian Holovaty y Simon Willison",
         "percentageOfUsers": "15.9%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/django.svg" 
       }
     },
     {
@@ -233,11 +308,16 @@ export default [
       "imageUrl": "/assets/image_17.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Front-End Development",
+        "applicationField": "Front-End",
         "yearOfCreation": 2010,
         "creator": "Google",
         "percentageOfUsers": "22.96%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/angular.svg" 
       }
     },
     {
@@ -248,11 +328,16 @@ export default [
       "imageUrl": "/assets/image_18.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Front-End Development",
+        "applicationField": "Front-End",
         "yearOfCreation": 2014,
         "creator": "Evan You",
         "percentageOfUsers": "18.82%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/vue-js.svg" 
       }
     },
     {
@@ -263,11 +348,16 @@ export default [
       "imageUrl": "/assets/image_19.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2002,
         "creator": "Rod Johnson",
         "percentageOfUsers": "13.35%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/spring.svg" 
       }
     },
     {
@@ -278,11 +368,16 @@ export default [
       "imageUrl": "/assets/image_20.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2011,
         "creator": "Taylor Otwell",
         "percentageOfUsers": "10.57%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/laravel.svg" 
       }
     },
     {
@@ -293,11 +388,16 @@ export default [
       "imageUrl": "/assets/image_21.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2010,
         "creator": "Armin Ronacher",
         "percentageOfUsers": "10.24%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/flask.svg" 
       }
     },
     {
@@ -308,11 +408,16 @@ export default [
       "imageUrl": "/assets/image_22.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Backend Development",
+        "applicationField": "Backend",
         "yearOfCreation": 2010,
         "creator": "TJ Holowaychuk",
         "percentageOfUsers": "20.37%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/backend.svg",
+        "logoUrl": "asset/logos/express.svg" 
       }
     },
     {
@@ -323,11 +428,16 @@ export default [
       "imageUrl": "/assets/image_25.jpeg",
       "facts": {
         "type": "Framework",
-        "applicationField": "Front-End Development",
+        "applicationField": "Front-End",
         "yearOfCreation": 2006,
         "creator": "John Resig",
         "percentageOfUsers": "18.64%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/jquery.svg" 
       }
     },
     {
@@ -343,6 +453,11 @@ export default [
         "creator": "Google Brain Team",
         "percentageOfUsers": "10.23%",
         "difficultyLevel": "Alto"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/datascience.svg",
+        "logoUrl": "asset/logos/tensorflow.svg" 
       }
     },
     {
@@ -352,12 +467,17 @@ export default [
       "description": "JavaScript, además de ser esencial en el desarrollo web, es uno de los lenguajes más versátiles y populares en la actualidad. Su presencia es crucial tanto para aplicaciones web como para servidores, gracias a su compatibilidad con frameworks modernos como React y Node.js. La capacidad de JavaScript para crear interacciones dinámicas en páginas web lo hace invaluable en el ámbito del desarrollo. Su influencia se extiende a la creación de experiencias web complejas y altamente funcionales, convirtiéndolo en un recurso imprescindible para los desarrolladores modernos.",
       "imageUrl": "/assets/image_1.jpeg",
       "facts": {
-        "type": "Programming Language",
-        "applicationField": "Front-End Development",
+        "type": "Language",
+        "applicationField": "Front-End",
         "yearOfCreation": 1995,
         "creator": "Brendan Eich",
         "percentageOfUsers": "63.61%",
         "difficultyLevel": "Bajo"
+      }, 
+      "extraInfo": {
+        "iconTypeUrl": "asset/icons/framework.svg",
+        "iconApplicationUrl": "asset/icons/frontend.svg",
+        "logoUrl": "asset/logos/javascript.svg" 
       }
     }
   
