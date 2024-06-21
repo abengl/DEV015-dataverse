@@ -35,7 +35,7 @@ describe("dataFunctions", () => {
       expect(computeStats(data).length).toBe(3);
     });
     it('should return id=javascript"', () => {
-      expect(computeStats(data)[2].name).toBe("SQL");
+      expect(computeStats(data)[0].name).toBe("JavaScript");
     });
   });
 });
