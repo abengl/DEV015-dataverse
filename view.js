@@ -77,7 +77,7 @@ export const renderRanking = (data) => {
               <span class="card-label field" itemprop="exampleOfWork">Aplicación ${objeto.facts.applicationField}</span>
             </div>
             <div class="item-label difficulty">
-              <img class="label-icon ${objeto.facts.difficultyLevel}" src="https://github.com/abengl/DEV015-dataverse/blob/8b4c491f38f8b9b84eb2a33dc0c41d6aa02432d0/assets/icons/fire.svg" alt="difficulty level" itemprop="image"/>
+              <img class="label-icon ${objeto.facts.difficultyLevel}" src="./assets/icons/fire.svg" alt="difficulty level" itemprop="image"/>
               <span class="card-label difficulty" itemprop="educationalLevel">Dificultad ${objeto.facts.difficultyLevel}</span>
             </div>
           </div>
