@@ -14,9 +14,9 @@ export default [
         "difficultyLevel": "Bajo"
       }, 
       "extraInfo": {
-        "iconTypeUrl": "/assets/icons/framework.svg",
-        "iconApplicationUrl": "/assets/icons/frontend.svg",
-        "logoUrl": "/assets/logos/react.svg" 
+        "iconTypeUrl": "./assets/icons/framework.svg",
+        "iconApplicationUrl": "./assets/icons/frontend.svg",
+        "logoUrl": "./assets/logos/react.svg" 
       }
     },
     {
