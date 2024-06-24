@@ -79,6 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mainElement.removeChild(ulElement);
     ulElement = renderRanking(metricsItems);
     mainElement.appendChild(ulElement);
-    
+
+    const h3Elements = document.querySelectorAll(".title-overlay")
+    h3Elements[0].innerHTML = "Lenguaje De Programación Más Usado"
+    h3Elements[1].innerHTML = "Lenguaje De Programación Más Antiguo"
+    h3Elements[2].innerHTML = "Lenguaje De Programación Más Actual"
   });
 });
