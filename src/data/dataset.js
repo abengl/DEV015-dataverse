@@ -4,7 +4,7 @@ export default [
       "name": "React",
       "shortDescription": "Biblioteca de JavaScript para construir interfaces de usuario rápidas e interactivas.",
       "description": "React es una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario dinámicas y eficientes, especialmente para aplicaciones de una sola página. Con React, los desarrolladores pueden crear componentes de UI reutilizables, lo que agiliza el proceso de desarrollo y lo hace más escalable. Además, la característica del virtual DOM de React optimiza el renderizado, lo que resulta en un mejor rendimiento para las aplicaciones web. Esta combinación de flexibilidad y rendimiento hace que React sea una opción popular para una variedad de proyectos de desarrollo de software en la actualidad.",
-      "imageUrl": "/assets/images/image_14.jpeg",
+      "imageUrl": "https://github.com/abengl/DEV015-dataverse/blob/gh-pages/assets/images/image_1.jpeg",
       "facts": {
         "type": "Framework",
         "applicationField": "Front-End",
