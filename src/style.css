@@ -200,6 +200,34 @@ ul {
   border-radius: 15px;
   transition: transform 0.3s ease-in-out;
   padding-bottom: 15px;
+  position: relative;
+}
+
+.card-hover {
+  height: 0;
+  width: 100%;
+  padding: 0 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  bottom: 0;
+  left: 0;
+  background: var(--gradient-basic);
+  transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title-hover {
+  color: var(--tx-color-light);
+  font-size: var(--fs-extra-large);
+  font-weight: var(--fw-bold);
+}
+
+.card:hover .card-hover {
+  height: 100%;
 }
 
 .card:hover {

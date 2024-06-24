@@ -79,6 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     mainElement.removeChild(ulElement);
     ulElement = renderRanking(metricsItems);
     mainElement.appendChild(ulElement);
-    
+    const h3Elements = document.querySelectorAll(".title-hover");
+    console.log(h3Elements);
+    h3Elements[0].innerHTML = "Lenguage de Programación Más Usado";
+    h3Elements[1].innerHTML = "Lenguage de Programación Más Antiguo";
+    h3Elements[2].innerHTML = "Lenguage de Programación Más Reciente";
   });
 });
