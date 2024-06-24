@@ -2,7 +2,6 @@ import { filterData, sortData, computeStats } from "./dataFunctions.js";
 import { renderItems, renderRanking } from "./view.js";
 import data from "./data/dataset.js";
 
-
 const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
