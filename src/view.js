@@ -37,7 +37,6 @@ export const renderItems = (data) => {
             </div>
         </div>
       `;
-    //Añadimos los li al elemento ul
     ulElement.appendChild(liElement);
   });
   return ulElement;
@@ -85,7 +84,6 @@ export const renderRanking = (data) => {
           <h3 class="title-overlay"></h3>
         </div>
       `;
-    //Añadimos los li al elemento ul
     ulElement.appendChild(liElement);
   });
   return ulElement;
