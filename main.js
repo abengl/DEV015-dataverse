@@ -3,18 +3,113 @@ import { renderItems, renderRanking } from "./view.js";
 import data from "./data/dataset.js";
 
 const mainElement = document.getElementById("root");
-let ulElement = renderItems(data);
-mainElement.appendChild(ulElement);
+mainElement.appendChild(renderItems(data));
 
-function resetSelectIndex(selectElement) {
-  selectElement.selectedIndex = 0;
+function resetSelectIndex(...selectElements) {
+  selectElements.forEach((selectElement) => {
+    selectElement.selectedIndex = 0;
+  });
 }
 
 function displayCards(data) {
-  mainElement.removeChild(ulElement);
-  ulElement = renderItems(data);
-  mainElement.appendChild(ulElement);
+  mainElement.innerHTML = "";
+  mainElement.appendChild(renderItems(data));
 }
+
+function applyFilterAndSort(activeFilter, inactiveFilter, orderSelect) {
+  let filteredData = data;
+  if (activeFilter.value) {
+    filteredData = filterData(
+      filteredData,
+      activeFilter.name,
+      activeFilter.value
+    );
+    resetSelectIndex(inactiveFilter);
+  }
+  if (orderSelect.value) {
+    filteredData = sortData(filteredData, "name", orderSelect.value);
+  }
+  displayCards(filteredData);
+}
+
+function handleOrder(data, orderSelect) {
+  let orderedData = data;
+  orderedData = sortData(orderedData, "name", orderSelect.value);
+  displayCards(orderedData);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const filterSelectType = document.querySelector("#type-select");
+  const filterSelectApplication = document.querySelector(
+    "#applicationField-select"
+  );
+  const orderSelect = document.querySelector("#order-select");
+  const clearButton = document.querySelector('[data-testid="button-clear"]');
+  const metricsButton = document.querySelector(".metrics");
+
+  filterSelectType.addEventListener("change", () => {
+    applyFilterAndSort(filterSelectType, filterSelectApplication, orderSelect);
+  });
+
+  filterSelectApplication.addEventListener("change", () => {
+    applyFilterAndSort(filterSelectApplication, filterSelectType, orderSelect);
+  });
+
+  orderSelect.addEventListener("change", () => {
+    if (filterSelectType.value) {
+      applyFilterAndSort(
+        filterSelectType,
+        filterSelectApplication,
+        orderSelect
+      );
+    } else if (filterSelectApplication.value) {
+      applyFilterAndSort(
+        filterSelectApplication,
+        filterSelectType,
+        orderSelect
+      );
+    } else {
+      handleOrder(data, orderSelect);
+    }
+  });
+
+  clearButton.addEventListener("click", () => {
+    resetSelectIndex(filterSelectType, filterSelectApplication, orderSelect);
+    displayCards(data);
+  });
+
+  metricsButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const metricsItems = computeStats(data);
+    mainElement.innerHTML = "";
+    mainElement.appendChild(renderRanking(metricsItems));
+
+    const h3Elements = document.querySelectorAll(".title-overlay");
+    h3Elements[0].innerHTML = "Lenguaje De Programación Más Usado";
+    h3Elements[1].innerHTML = "Lenguaje De Programación Más Antiguo";
+    h3Elements[2].innerHTML = "Lenguaje De Programación Más Actual";
+  });
+});
+
+/*
+import { filterData, sortData, computeStats } from "./dataFunctions.js";
+import { renderItems, renderRanking } from "./view.js";
+import data from "./data/dataset.js";
+
+
+const mainElement = document.getElementById("root");
+mainElement.appendChild(renderItems(data));
+
+function resetSelectIndex(...selectElements) {
+  selectElements.forEach(selectElement => {
+    selectElement.selectedIndex = 0;
+  })
+}
+
+function displayCards(data) {
+  mainElement.innerHTML = "";
+  mainElement.appendChild(renderItems(data));
+} 
 
 document.addEventListener("DOMContentLoaded", () => {
   const filterSelectType = document.querySelector("#type-select");
@@ -70,17 +165,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   clearButton.addEventListener("click", () => {
+    resetSelectIndex(filterSelectType, filterSelectApplication, orderSelect);
     displayCards(data);
   });
 
   metricsButton.addEventListener("click", () => {
     const metricsItems = computeStats(data);
-    mainElement.removeChild(ulElement);
-    ulElement = renderRanking(metricsItems);
-    mainElement.appendChild(ulElement);
-    const h3Elements = document.querySelectorAll(".title-hover");
-    h3Elements[0].innerHTML = "Lenguage de Programación Más Usado";
-    h3Elements[1].innerHTML = "Lenguage de Programación Más Antiguo";
-    h3Elements[2].innerHTML = "Lenguage de Programación Más Reciente";
+    mainElement.innerHTML = "";
+    mainElement.appendChild(renderRanking(metricsItems));
+
+    const h3Elements = document.querySelectorAll(".title-overlay")
+    h3Elements[0].innerHTML = "Lenguaje De Programación Más Usado"
+    h3Elements[1].innerHTML = "Lenguaje De Programación Más Antiguo"
+    h3Elements[2].innerHTML = "Lenguaje De Programación Más Actual"
   });
 });
+
+*/

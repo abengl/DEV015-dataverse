@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dataverse</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <title>TechGenius</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -24,9 +29,8 @@
           filtros con un clic. TechGenius, tu puerta al futuro tecnológico.
         </p>
       </div>
-      <!--Nav-->
+
       <nav class="select-container">
-        <!--Select 1: Tipo-->
         <label for="type-select"></label>
         <select name="type" id="type-select" data-testid="select-filter">
           <option value="" disabled selected>Filtrar por tipo</option>
@@ -35,7 +39,6 @@
           <option value="Markup">Markup</option>
         </select>
 
-        <!--Select 2: Campo de aplicación-->
         <label for="applicationField-select"></label>
         <select
           name="applicationField"
@@ -48,7 +51,6 @@
           <option value="Data">Data</option>
         </select>
 
-        <!--Select 3: Ordenar-->
         <label for="order-select"></label>
         <select name="name" id="order-select" data-testid="select-sort">
           <option value="" disabled selected>Ordenar</option>
@@ -56,11 +58,16 @@
           <option value="desc">Descendente</option>
         </select>
 
-        <!--Botón 1: Limpiar-->
         <button data-testid="button-clear">Limpiar</button>
 
-        <!--Botón 2: Métricas Ranking-->
-        <button class="metrics">Ranking<img src="assets/icons/ranking.svg" height="16px" width="16px"/></button>
+        <button class="metrics">
+          Ranking<img
+            src="assets/icons/ranking.svg"
+            height="16"
+            width="16"
+            alt="top icon"
+          />
+        </button>
       </nav>
     </header>
     <main id="root"></main>
