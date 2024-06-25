@@ -1,5 +1,6 @@
 export function filterData(data, filterBy, value) {
-  return data.filter((obj) => obj.facts[filterBy] === value);
+  const dataCopy = data.map((obj) => obj);
+  return dataCopy.filter((obj) => obj.facts[filterBy] === value);
 }
 
 export function sortData(data, sortBy, sortOrder) {
@@ -27,7 +28,6 @@ export function computeStats(data) {
 
   return [ maxUsers, oldest, newest ];
 }
-
 
 /* 
 export function computeStats(data) {
